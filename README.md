@@ -1,14 +1,14 @@
 # validation
 
 ## 1. Formik
-### <Formik></Formik>
+### Formik태그
 양식을 만드는 것을 도와주는 구성요소
 
-### initialValues
-form의 초기화 값. 반드시 지정해주어야 한다.
-
-### onSubmit
-form submission handler.
+### Formik의 props
+- initialValues (form의 초기화 값. 반드시 지정해주어야 한다.)
+- onSubmit (form submission handler.)
+- validationSchema (yup 스키마를 리턴. 유효성 검증에 사용된다.)
+- validate (yup, validationSchema 사용 안할때)
 
 ### values
 form에서 공유되는 상태 값. 
@@ -16,9 +16,6 @@ form에서 공유되는 상태 값.
 ### setSubmitting
 onSubmit 핸들러에 setSubmitting(false)을 넣어 호출하면 주기가 완료됩니다.
 onSubmit이 비동기일 경우, 자동으로 false로 지정해주어서 setSubmit(false)를 해주지 않아도 되지만, 동기일 경우에는 반드시 setSubmit(false)를 해주어야 한다.
-
-### validationSchema
-yup 스키마를 리턴. 유효성 검증에 사용된다.
 
 ### yup
 form validation을 위한 라이브러리.
