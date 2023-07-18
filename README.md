@@ -1,6 +1,8 @@
 # validation
 
 ## 1. Formik
+### 설치
+` npm install formik --save`
 ### Formik태그
 양식을 만드는 것을 도와주는 구성요소
 
