@@ -1,7 +1,7 @@
 # validation
 
 ## 1. Formik
-### Formik
+### <Formik></Formik>
 양식을 만드는 것을 도와주는 구성요소
 
 ### initialValues
