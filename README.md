@@ -147,3 +147,17 @@ export default function App() {
 }
 ```
 https://www.youtube.com/watch?v=RkXv4AXXC_4
+
+### Register fields
+React Hook Form의 핵심 개념 중 하나는 register구성 요소를 후크에 연결하는 것입니다. 이렇게 하면 양식 유효성 검사 및 제출 모두에 해당 값을 사용할 수 있습니다.
+
+참고: 각 필드는 등록 프로세스를 위한 키로 있어야 합니다. (name)
+
+### 지원되는 유효성 검사 규칙 목록
+- required
+- min
+- max
+- minLength
+- maxLength
+- pattern
+- validate
