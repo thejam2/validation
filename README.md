@@ -161,3 +161,41 @@ React Hook Form의 핵심 개념 중 하나는 register구성 요소를 후크�
 - maxLength
 - pattern
 - validate
+
+### Schema Validation
+또한 Yup , Zod , Superstruct & Joi 를 사용하여 스키마 기반 양식 유효성 검사를 지원합니다.
+
+여기에서 useForm 을 선택적 구성으로 schema전달할 수 있습니다.
+
+스키마에 대해 입력 데이터의 유효성을 검사하고 오류 또는 유효한 결과를 반환합니다.
+```
+const schema = yup
+  .object({
+    firstName: yup.string().required(),
+    age: yup.number().positive().integer().required(),
+  })
+  .required()
+
+export default function App() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    resolver: yupResolver(schema),
+  })
+  const onSubmit = (data) => console.log(data)
+
+  return (
+    <form onSubmit={handleSubmit(onSubmit)}>
+      <input {...register("firstName")} />
+      <p>{errors.firstName?.message}</p>
+
+      <input {...register("age")} />
+      <p>{errors.age?.message}</p>
+
+      <input type="submit" />
+    </form>
+  )
+}
+```
