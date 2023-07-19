@@ -168,6 +168,10 @@ React Hook Form의 핵심 개념 중 하나는 register구성 요소를 후크�
 여기에서 useForm 을 선택적 구성으로 schema전달할 수 있습니다.
 
 스키마에 대해 입력 데이터의 유효성을 검사하고 오류 또는 유효한 결과를 반환합니다.
+
+1. yup 설치
+`npm install @hookform/resolvers yup`
+2. 유효성 검사를 위해 스키마를 준비하고 React Hook Form으로 입력을 등록
 ```
 const schema = yup
   .object({
