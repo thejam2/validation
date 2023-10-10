@@ -162,6 +162,9 @@ React Hook Form의 핵심 개념 중 하나는 register구성 요소를 후크�
 - pattern
 - validate
 
+### with TS
+https://react-hook-form.com/ts
+
 ### Schema Validation
 또한 Yup , Zod , Superstruct & Joi 를 사용하여 스키마 기반 양식 유효성 검사를 지원합니다.
 
